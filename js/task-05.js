@@ -9,7 +9,7 @@ const deliveryCostJamaika = 120;
 const country = prompt("введите страну:");
 
 if (country !== null) {
-  switch (country) {
+  switch (country.toLowerCase()) {
     case "китай":
       price = deliveryCostChina;
       console.log(`Доставка в ${country} будет стоить ${price} кредитов`);
@@ -21,14 +21,17 @@ if (country !== null) {
       break;
 
     case "австралия":
+      price = deliveryCostAustralia;
       console.log(`Доставка в ${country} будет стоить ${price} кредитов`);
       break;
 
     case "индия":
+      price = deliveryCostIndia;
       console.log(`Доставка в ${country} будет стоить ${price} кредитов`);
       break;
 
     case "ямайка":
+      price = deliveryCostJamaika;
       console.log(`Доставка в ${country} будет стоить ${price} кредитов`);
       break;
 
